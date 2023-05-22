@@ -1,0 +1,36 @@
+.container {
+    border: solid purplel;
+    background-color: mediumspringgreen;
+    height: 900px;
+    width: 1897px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#calculator {
+    border: solid black;
+    background-color: rgb(255, 255, 255);
+    height: 200px;
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-content: space-evenly;
+}
+
+.row {
+    display: flex;
+    height: 25%;
+    justify-content: space-around;
+    align-items: center;
+    margin-block: 1%;
+}
+
+.btn {
+    background-color: rgb(204, 209, 214);
+    padding: 0px;
+    box-sizing: border-box;
+    height: 100%;
+    width: 22%;
+    margin: 1%;
+}
