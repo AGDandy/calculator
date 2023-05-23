@@ -65,6 +65,7 @@ opsBtns.forEach((element) => {
             num2 = 0;
             storeOps(element.textContent);
             display.textContent = num1 + " " + operator;
+            num2Entered = false;
         }
         else {}
     })
@@ -76,6 +77,12 @@ eval.addEventListener("click", () => {
         display.textContent = nextFunction(num1, num2);
         reset();
     }
+    else if (isStepOne == false && isStepTwo == true && num2Entered == false ) {
+        display.textContent = num1;
+        isStepOne = true;
+        isStepTwo = false;
+    }
+    else{}
 })
 
 aClr.addEventListener("click", () => {
